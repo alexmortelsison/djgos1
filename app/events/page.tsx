@@ -1,12 +1,8 @@
 "use client";
 import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 export default function EventsPage() {
-  const dateRef = useRef(null);
-  const locRef = useRef(null);
-  const monthRef = useRef(null);
-
   useEffect(() => {
     gsap.to(".date", {
       opacity: 1,

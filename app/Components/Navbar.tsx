@@ -23,11 +23,6 @@ export default function Navbar() {
     });
   }, []);
 
-  const LottiePlayer = dynamic(
-    () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
-    { ssr: false }
-  );
-
   return (
     <nav
       className="bg-transparent fixed top-0 left-0 w-full mt-12 md:px-48 px-8 flex items-center justify-between z-20 opacity-0 -translate-y-20 text-white font-goldman"
