@@ -7,10 +7,11 @@ import {
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Hamburger from "./Hamburger";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
   const navRef = useRef(null);
   useEffect(() => {
     gsap.to(navRef.current, {
@@ -36,24 +37,27 @@ export default function Navbar() {
         </button>
       </Link>
       <div className="hover:cursor-pointer md:hidden font">
-        <Popover>
+        <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger>
             <Hamburger />
           </PopoverTrigger>
           <PopoverContent className="bg-black h-screen w-screen mt-2 text-white font-goldman">
             <Link
+              onClick={() => setOpen(false)}
               href={"/"}
               className="flex justify-center text-center mt-16 text-2xl hover:bg-pink-500 py-4 px-2 rounded-full  duration-150"
             >
               Home
             </Link>
             <Link
+              onClick={() => setOpen(false)}
               href={"/events"}
               className="flex justify-center text-center text-2xl hover:bg-pink-500 py-4 px-2 rounded-full  duration-150"
             >
               Events
             </Link>
             <Link
+              onClick={() => setOpen(false)}
               href={"/contact"}
               className="flex justify-center text-center text-2xl hover:bg-pink-500 py-4 px-2 rounded-full  duration-150"
             >
