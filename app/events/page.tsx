@@ -33,11 +33,11 @@ export default function EventsPage() {
 
   return (
     <div className="h-full bg-black text-white flex w-full">
-      <div className="md:mt-52 w-full md:pl-48 pl-4 mt-30">
-        <h1 className="text-4xl tracking-tighter font-bold font-goldman flex justify-self-center md:justify-self-start opacity-0 -translate-x-40 month">
+      <div className="md:mt-52 w-full md:pl-48 pl-4 mt-30 schedule">
+        <h1 className="text-4xl tracking-tighter font-bold font-goldman flex justify-self-center md:justify-self-start -translate-x-120 month">
           October
         </h1>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             5
           </h2>
@@ -46,7 +46,7 @@ export default function EventsPage() {
             Society Lounge
           </p>
         </div>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             7
           </h2>
@@ -55,7 +55,7 @@ export default function EventsPage() {
             Sanctuary
           </p>
         </div>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             10
           </h2>
@@ -64,7 +64,7 @@ export default function EventsPage() {
             The Vault
           </p>
         </div>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             14
           </h2>
@@ -73,7 +73,7 @@ export default function EventsPage() {
             Sanctuary
           </p>
         </div>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             22
           </h2>
@@ -82,7 +82,7 @@ export default function EventsPage() {
             Sanctuary
           </p>
         </div>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             24
           </h2>
@@ -91,7 +91,7 @@ export default function EventsPage() {
             Aurum
           </p>
         </div>
-        <div className="flex mt-8 items-center border-b mx-24 my-24">
+        <div className="flex mt-8 items-center border-b mx-24 my-24 hover:bg-gray-900 py-8 px-6 rounded-t-4xl">
           <h2 className="text-7xl font-londrina text-pink-500 -translate-y-20 opacity-0 date">
             25
           </h2>
