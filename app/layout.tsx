@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${londrina.variable} ${goldman.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${londrina.variable} ${goldman.variable} ${geistSans.variable} ${geistMono.variable} antialiased select-none`}
       >
         <Navbar />
         {children}

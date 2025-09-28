@@ -46,7 +46,7 @@ export default function Hero() {
       <div className="absolute inset-0 justify-center items-center text-center mt-36">
         <h1
           ref={titleRef}
-          className="md:text-[300px] text-[200px] lg:tracking-[100px] font-black right-10 opacity-0 text-teal-300 font-goldman"
+          className="md:text-[300px] text-[150px] lg:tracking-[100px] font-black right-10 opacity-0 text-teal-300 font-goldman mt-16 md:mt-0"
         >
           GOS
         </h1>
