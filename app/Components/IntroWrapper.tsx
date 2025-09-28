@@ -22,7 +22,15 @@ export default function IntroWrapper() {
             playsInline
             autoPlay
             muted
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover hidden lg:block"
+          />
+          <video
+            ref={videoRef}
+            src="/intro2.mp4"
+            playsInline
+            autoPlay
+            muted
+            className="w-full h-full object-cover lg:hidden"
           />
         </div>
       )}
