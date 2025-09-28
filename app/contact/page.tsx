@@ -6,12 +6,13 @@ import React, { useEffect, useRef } from "react";
 export default function ContactPage() {
   const titleRef = useRef(null);
   const imgRef = useRef(null);
+  const bgRef = useRef(null);
 
   useEffect(() => {
     gsap.to(titleRef.current, {
       opacity: 1,
       duration: 1,
-      delay: 1,
+      delay: 2,
       y: -20,
       ease: "back.inOut",
     });
@@ -36,9 +37,24 @@ export default function ContactPage() {
       y: -20,
       ease: "back.inOut",
     });
+    gsap.to(bgRef.current, {
+      opacity: 1,
+      duration: 1,
+      delay: 1,
+      ease: "power2.inOut",
+    });
   }, []);
   return (
-    <div className="bg-black min-h-screen w-full text-white font-goldman flex justify-center text-center">
+    <div className="min-h-screen w-full text-white font-goldman flex justify-center text-center relative overflow-hidden">
+      <div className="-z-50 inset-0 absolute h-screen w-screen">
+        <Image
+          src={"/bg.jpg"}
+          alt="bg"
+          fill
+          className="opacity-0 object-cover"
+          ref={bgRef}
+        />
+      </div>
       <div className="lg:flex justify-center overflow-hidden px-8 md:space-x-64">
         <div className="text-center justify-center mt-64 md:mt-82">
           <h1
