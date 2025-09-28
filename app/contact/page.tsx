@@ -38,11 +38,11 @@ export default function ContactPage() {
     });
   }, []);
   return (
-    <div className="bg-black min-h-screen w-full text-white font-goldman">
-      <div className="md:flex justify-center overflow-hidden px-8 md:space-x-64">
+    <div className="bg-black min-h-screen w-full text-white font-goldman flex justify-center text-center">
+      <div className="lg:flex justify-center overflow-hidden px-8 md:space-x-64">
         <div className="text-center justify-center mt-64 md:mt-82">
           <h1
-            className="text-7xl whitespace-nowrap text-teal-300 opacity-0"
+            className="md:text-7xl text-4xl whitespace-nowrap text-teal-300 opacity-0"
             ref={titleRef}
           >
             Let&apos;s Talk!
@@ -114,7 +114,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <div className="mt-64 hidden md:block">
+        <div className="mt-64 hidden lg:block">
           <Image
             ref={imgRef}
             src={"/gos.JPG"}
