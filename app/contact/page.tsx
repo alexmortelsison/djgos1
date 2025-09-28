@@ -45,7 +45,7 @@ export default function ContactPage() {
             className="text-7xl whitespace-nowrap text-teal-300 opacity-0"
             ref={titleRef}
           >
-            Let's Talk!
+            Let&apos;s Talk!
           </h1>
           <p className="border-b mt-8"></p>
           <div className="flex flex-col justify-start mt-16 space-y-4">

@@ -8,7 +8,6 @@ import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
-import dynamic from "next/dynamic";
 import Hamburger from "./Hamburger";
 
 export default function Navbar() {
